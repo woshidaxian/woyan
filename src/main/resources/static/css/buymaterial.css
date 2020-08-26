@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 顶部背景 */
+.con-top{
+    width: 100%;
+    height: 160px;
+    background: url(../img/bg1.jpg);
+}
+.top-t{
+    font-size: 16px;
+    width: 66%;
+    margin: 0 auto;
+    padding-top: 40px;
+    /* line-height: 120px; */
+    color: rgb(37, 37, 37);
+}
+.top-tips{
+    font-size: 12px;
+    color: rgb(255, 0, 0);
+    font-weight: 200;
+    line-height: 30px;
+}
+/* 订单信息开始 */
+.order-mess{
+    padding-top: 20px;
+    font-size: 13px;
+    color: rgb(153, 153, 153);
+}
+.span-active{
+    font-size: 28px;
+}
+.con-center{
+    width: 100%;
+}
+/* 商品信息 */
+.center-box-1{
+    width: 66%;
+    padding: 20px 30px;
+    margin: 0 auto;
+    min-height: 400px;
+    border-radius: 10px;
+    position: relative;
+    top: -38px;
+    background: #ffffff;
+    box-shadow: 0px 0px 22px -4px rgb(185, 185, 185);
+}
+.center-box-2{
+    display: none;
+    width: 66%;
+    padding: 20px 30px;
+    margin: 0 auto;
+    min-height: 400px;
+    border-radius: 10px;
+    position: relative;
+    top: -38px;
+    background: #ffffff;
+    box-shadow: 0px 0px 22px -4px rgb(185, 185, 185);
+}
+.box-v{
+    height: 160px;
+    background: rgba(238, 238, 238, 0.658);
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.v-img{
+    /* border: 1px solid red; */
+    height: 100px;
+    margin-left: 30px;
+}
+/* 商品图片标签 */
+.v-img img{
+    height: 100%;
+}
+.v-title{
+    height: 80px;
+    margin-left: 20px;
+    width: 50%;
+}
+.v-price{
+    color: rgb(0, 185, 83);
+    font-size: 18px;
+    font-weight: bold;
+}
+.inp-num{
+    width: 30px;
+    text-align: center;
+}
+.btn-plus,.btn-reduce{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.btn-up{
+    width: 140px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    border-radius: 23px;
+    background: rgb(0, 185, 83);
+    float: right;
+    margin-top: 110px;
+}
+.btn-up:hover{
+    background: rgb(0, 138, 62);
+    cursor: pointer;
+}
+/* 一条横线的样式 */
+.line-s{
+    width: 100%;
+    height: 1px;
+    background: rgb(228, 228, 228);
+    margin-top: 30px;
+}
+/* 配送方式 */
+.kuaidi{
+    margin-top: 20px;
+    font-size: 13px;
+    color: rgb(73, 73, 73);
+}
+.kuaidi-o{
+    padding-left: 9px;
+    color: rgb(238, 151, 52);
+}
+.kuaidi-price{
+    padding-left: 6px;
+    color: rgb(238, 151, 52);
+}
+.top20px{
+    margin-top: 20px;
+}
+/* 地址信息 */
+.address-div-left{
+    width: 20%;
+    float: left;
+}
+.address-div-left div{
+    width: 100%;
+    text-align: right;
+    padding: 17px 0px;
+    font-size: 14px;
+    color: rgb(129, 129, 129);
+}
+.address-div-right div{
+    padding: 14px 22px;
+    font-size: 14px;
+    color: rgb(129, 129, 129);
+}
+.address-div-right{
+    width: 79%;
+    float: left;
+    margin-top: 4px;
+}
+.address-div-right input{
+    height: 22px;
+    line-height: 40px;
+    outline: none;
+    text-indent: 8px;
+}
+.redstar{
+    color: red;
+    padding-left: 10px;
+}
+.inp-address{
+    width: 260px;
+}
+.inp-receiver{
+    width: 80px;
+}
+.inp-email{
+    width: 190px;
+}
+/* 推荐人 */
+.recommend-div{
+    padding: 22px 40px;
+    color: gray;
+    font-size: 14px;
+}
+.inp-recommend-number{
+    width: 160px;
+    height: 32px;
+    text-indent: 6px;
+    margin-left: 50px;
+    margin-top: 10px;
+    outline: none;
+}
+
+
+.paybox{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+.payway-1,.payway-2{
+    width: 200px;
+    height: 100px;
+    background: #f3f5f7;
+    border-radius: 8px;
+    margin-right: 20px;
+    background-image: url(../img/pay_s.png);
+    background-repeat: no-repeat;
+    background-position: 40px 12px;
+    margin-bottom: 20px;
+}
+.payway-2{
+    background-position: 38px -108px;
+}
+.pay-active{
+    width:196px;
+    height: 96px;
+    border: 2px solid rgb(0, 185, 83);
+}
+.payway-1:hover,.payway-2:hover{
+    width:196px;
+    height: 96px;
+    border: 2px solid rgb(0, 185, 83);
+    cursor: pointer;
+}
+.tipandprice{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
+.tips{
+    float: left;
+    color: rgb(255, 186, 95);
+    font-size: 13px;
+}
+.fin-price{
+    float: right;
+}
+.pay-price{
+    color: rgb(0, 185, 83);
+    font-size: 28px;
+    font-weight: bold;
+}
+.btn-pay{
+    width: 120px;
+    height: 44px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 44px;
+    background: rgb(0, 185, 83);
+    cursor: pointer;
+}
+.pay-tip{
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: rgb(185, 185, 185);
+    margin-top: 18px;
+}

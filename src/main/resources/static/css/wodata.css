@@ -1,0 +1,30 @@
+body{
+    background: #f5fcff;
+}
+.con-data{
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 200px;
+    background: #ffffff;
+    margin-top: 10px;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+}
+#chart1{
+    width: 50%;
+    height: 500px;
+    float: left;
+}
+#chart2,#chart3{
+    float: left;
+    width: 50%;
+    height: 500px;
+}
+#chart4{
+    width: 50%;
+    height: 500px;
+    float: left;
+}
+#chart3,#chart4{
+    margin-top: 100px;
+}

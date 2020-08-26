@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 考研资讯页面 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/kaoyannews.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/vue.min.js"></script>
+    <script src="../layui/layui.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="top-bar">
+            <div class="school-div">
+                <span class="school-name">未选择</span>
+                <span class="fa fa-caret-down" style="margin-left: 6px;"></span>
+            </div>
+            <div class="nav-div">
+                <ul class="layui-nav" lay-filter="">
+                    <li class="layui-nav-item"><a href="index.html">首页</a></li>
+                    <li class="layui-nav-item"><a href="videos.html">视频学习</a></li>
+                    <li class="layui-nav-item"><a href="material.html">考研资料</a></li>
+                    <li class="layui-nav-item"><a href="examination.html">在线考试</a></li>
+                    <li class="layui-nav-item"><a href="exam.html">题库</a></li>
+                    <li class="layui-nav-item layui-this"><a href="kaoyannews.html">考研资讯</a></li>
+                    <li class="layui-nav-item"><a href="forum.html">论坛</a></li>
+                    <li class="layui-nav-item"><a href="wodata.html">蜗数据</a></li>
+                    <li class="layui-nav-item"><a href="personalcenter.html">个人中心</a></li>
+                </ul>
+            </div>
+            <div class="sign-register">
+                登录｜注册
+            </div>
+        </div>
+        <div class="top-bar-none"></div>
+        <div class="center-news clearfix">
+            <div class="center-news-left">
+                <!-- 轮播图 -->
+                <div class="news-lunbo"></div>
+                <div class="news-left-type">
+                    <ul class="type-ul clearfix">
+                        <li class="type-ul-li type-li-active">全部</li>
+                        <li class="type-ul-li">经验心得</li>
+                        <li class="type-ul-li">小道消息</li>
+                        <li class="type-ul-li">招生信息</li>
+                        <li class="type-ul-li">校园信息</li>
+                        <li class="type-ul-li">研究生生活</li>
+                        <li class="type-ul-li">专业课</li>
+                        <li class="type-ul-li">资料课本信息</li>
+                    </ul>
+                </div>
+                <div class="latelynews-t">最新文章</div><hr>
+                <div class="news-box"></div>
+                <div class="btn-more-div">
+                    <div class="btn-more">加载更多</div>
+                </div>
+            </div>
+            <div class="center-news-right">
+                <!-- 推荐 -->
+                <div class="news-right-recommend clearfix"></div>
+                <div class="time-text">2020考研时间安排</div>
+                <div class="kaoyan-time-div">
+                    <ul class="layui-timeline">
+                        <li class="layui-timeline-item">
+                            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                            <div class="layui-timeline-content layui-text">
+                            <h3 class="layui-timeline-title">12月21日</h3>
+                            <p>
+                                <span class="layui-badge-dot layui-bg-blue"></span>&nbsp;
+                                考研第一天<br/>
+                                上午：<br/>
+                                思想政治理论、管理类联考综合能力<br/>
+                                下午：<br/>
+                                外国语
+                            </p>
+                            </div>
+                        </li>
+                        <li class="layui-timeline-item">
+                            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                            <div class="layui-timeline-content layui-text">
+                            <h3 class="layui-timeline-title">12月14日起</h3>
+                            <p>
+                                2020考研准考证开始打印<br/>
+                                截止时间到2020年12月24日<br/>
+                                考生可凭网报用户名和密码登录“研招网”自行下载打印《准考证》<br/>
+                                请考生务必妥善保管个人网报用户名、密码及《准考证》、居民身份证等证件，避免泄露丢失造成损失。
+                            </p>
+                            </div>
+                        </li>
+                        <li class="layui-timeline-item">
+                            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                            <div class="layui-timeline-content layui-text">
+                            <h3 class="layui-timeline-title">10月10日-10月31日</h3>
+                            <p>
+                                2020考研正式报名<br/>
+                                每天9:00-22:00
+                            </p>
+                            <!-- <ul>
+                                <li>《登高》</li>
+                                <li>《茅屋为秋风所破歌》</li>
+                            </ul> -->
+                            </div>
+                        </li>
+                        <li class="layui-timeline-item">
+                            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                            <div class="layui-timeline-content layui-text">
+                            <h3 class="layui-timeline-title">9月24日-9月27日</h3>
+                            <p>
+                                2020考研预报名
+                                <br/>每天9:00-22:00
+                            </p>
+                            </div>
+                        </li>
+                        <li class="layui-timeline-item">
+                            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                            <div class="layui-timeline-content layui-text">
+                            <div class="layui-timeline-title">2019考研</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="con-footer">
+            <div>
+                蜗研简介 ┊ 联系我们 ┊ 意见反馈 ┊ 免责声明
+            </div>
+            <div>
+                © 2018 - 2019 woyanwang. All Rights Reserved.如有问题请发邮件到 414709943@qq.com
+            </div>
+        </div>
+    </div>
+    <div id="signInBlock" v-if="signIsShow">
+        <div class="block-white">
+            <!-- 退出登录 -->
+            <div class="sign-xxx">
+                <span class="fa fa-close sign-fa-xxx" @click="btnSignX"></span>
+            </div>
+            <!-- 登录注册切换 -->
+            <div class="top">
+                <div class="top-sign" :class="{ activeBorderColor: SignIsActive }" @click="btnS">登录</div>
+                <div class="top-register" :class="{ activeBorderColor: isActive }" @click="btnR">注册</div>
+            </div>
+            <!-- 登录板块 -->
+            <div class="center" v-if="nowSign">
+                <div class="center-acc">
+                    <span class="fa fa-user sign-fa-style"></span>
+                    <input type="text" placeholder="请输入账号" v-model="signAccount">
+                </div>
+                <div class="center-pass">
+                    <span class="fa fa-lock sign-fa-style"></span>
+                    <input type="password" placeholder="请输入密码" v-model="signPassword">
+                </div>
+                <div class="btn-sign" @click="btnSign">登录</div>
+            </div>
+            <!-- 注册板块 -->
+            <div class="center-register" v-else>
+                <div v-if="register_step">
+                    <div class="center-register-account">
+                        <span class="fa fa-user sign-fa-style"></span>
+                        <input type="text" placeholder="请输入用户名" v-model="registerAccount">
+                    </div>
+                    <div class="center-register-password">
+                        <span class="fa fa-lock sign-fa-style"></span>
+                        <input type="password" placeholder="请输入密码" v-model="registerPassword">
+                    </div>
+                    <div class="center-register-phoneNumber">
+                        <span class="fa fa-phone sign-fa-style"></span>
+                        <input type="text" placeholder="请输入手机号" v-model="registerPhone">
+                    </div>
+                    <div class="center-register-VerificationCode">
+                        <input type="text" placeholder="请输入短信验证码" v-model="registerVerificationCode">
+                        <button class="getCodeDiv" @click="btnGetCode" :disabled="btnIsActive">{{textCode}}</button>
+                    </div>
+                    <div class="btn-next-step" @click="btnNextStep">下一步</div>
+                </div>
+                <div v-else>
+                    <div class="center-register-school" @click="btnSchool1">
+                        <span class="fa fa-book sign-fa-style"></span>
+                        <input type="text" placeholder="选择目前就读院校" v-model="registerSchool1">
+                    </div>
+                    <div class="center-register-year">
+                        <span class="fa fa-hourglass-2 sign-fa-style"></span>
+                        <input type="text" placeholder="输入考研年份" v-model="registerYear">
+                    </div>
+                    <div class="center-register-school" @click="btnSchoolO">
+                        <span class="fa fa-book sign-fa-style"></span>
+                        <input type="text" placeholder="选择目标院校" v-model="registerSchool">
+                    </div>
+                    <div class="center-register-object" @click="btnObject">
+                        <span class="fa fa-mortar-board sign-fa-style"></span>
+                        <input type="text" placeholder="选择报考的专业" v-model="registerObject">
+                    </div>
+                    <div class="center-register-isover">
+                        如果你是跨专业考生请在这里打钩
+                        <input type="checkbox" class="isOverObject" v-model="isChecked">
+                    </div>
+                    <div class="btn-sign" @click="btnRegister">注册</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="con-school">
+        <div class="school-block">
+            <div class="block-top">
+                <div class="top-area">
+                    地区选择 >
+                </div>
+                <div class="top-area-a"></div>
+            </div>
+            <hr>
+            <div class="block-top">
+                <div class="top-area">
+                    可选学校 >
+                </div>
+                <div class="center-right"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/kaoyannews.js"></script>
+</body>
+</html>

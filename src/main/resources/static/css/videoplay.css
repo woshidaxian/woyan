@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100%;
+}
+.container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.con-top{
+    height: 60px;
+    line-height: 60px;
+    text-indent: 4%;
+    font-weight: bold;
+}
+.play-box{
+    width: 94%;
+    height: 88%;
+    padding: 2% 3%;
+    background: rgb(44, 44, 44);
+}
+#play{
+    float: left;
+}
+/* 目录 */
+.catalog-div{
+    float: left;
+    padding: 10px 24px;
+}
+.a-catalog{
+    width: 100%;
+    font-size: 14px;
+    color: #a0a0a0;
+    height: 36px;
+    line-height: 36px;
+}
+.a-catalog-active{
+    color: #ffffff;
+}
+.a-catalog:hover{
+    color: #ffffff;
+    cursor: pointer;
+}

@@ -1,0 +1,150 @@
+body{
+    background: rgb(241, 241, 241);
+}
+.center-exam{
+    width: 1200px;
+    padding-bottom: 40px;
+    background: #ffffff;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    min-height: 100%;
+    border: 1px solid rgb(231, 231, 231)
+}
+.box-sort-div{
+    border-bottom: 2px solid #25bb9b;
+}
+.sort-style{
+    width: 70px;
+    height: 40px;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: -2px;
+}
+.sort-style:hover{
+    background: #25bb9b;
+    color: #ffffff;
+    cursor: pointer;
+}
+.sort-active{
+    background: #25bb9b;
+    color: #ffffff;
+}
+.exam-box-padding20px{
+    padding: 20px;
+    overflow: hidden;
+}
+.con-exam{
+    width: 1200px;
+}
+.a-exam{
+    width: 185px;
+    height: 230px;
+    padding: 15px;
+    /* margin-right: 20px; */
+    /* margin-bottom: 15px; */
+    border: 1px solid gainsboro;
+    /* float: left; */
+}
+.a-exam h1{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    height: 100px;
+    width: 185px;
+    overflow: hidden;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.a-exam-logo{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgb(228, 228, 228);
+    vertical-align: middle;
+    line-height: 80px;
+}
+.logo-img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+.a-exam-hot{
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    color: #666;
+}
+.a-exam-give{
+    width: 100%;
+    height: 50px;
+    padding-top: 30px;
+    margin: 0 auto;
+    text-align: center;
+    color: #25bb9b;
+    vertical-align: middle;
+    display: none;
+}
+.btn-begin{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    background: #25bb9b;
+    border-radius: 6px;
+    margin-top: 10px;
+    display: none;
+}
+.btn-begin:hover{
+    background: #1e9b80;
+    cursor: pointer;
+}
+.a-exam-box{
+    width: 215px;
+    float: left;
+    /* padding: 15px; */
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+.a-exam-box:hover .a-exam-logo{
+    display: none;
+    cursor: pointer;
+}
+.a-exam-box:hover .a-exam-hot{
+    display: none;
+    cursor: pointer;
+}
+.a-exam-box:hover .btn-begin{
+    display: block;
+    cursor: pointer;
+}
+.a-exam-box:hover .a-exam-give{
+    display: block;
+    cursor: pointer;
+}
+.a-exam-box:hover .star-t{
+    color: #25bb9b;
+}
+.nandu{
+    height: 50px;
+    line-height: 50px;
+    text-indent: 20px;
+}
+.star-style{
+    color: #feb200;
+    font-size: 20px;
+}
+/* 分页 */
+.exam-page{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}

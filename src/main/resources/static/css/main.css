@@ -1,0 +1,354 @@
+*{
+    font-family: 微软雅黑;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.top-bar{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #393d49;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    /* display: flex; */
+}
+.top-bar-none{
+    width: 100%;
+    height: 60px;
+}
+.school-div{
+    max-width: 200px;
+    padding: 0 20px;
+    padding-right: 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #ffffff;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+.school-div:hover{
+    cursor: pointer;
+}
+.nav-div{
+    width: auto;
+    height: 60px;
+    float: left;
+}
+.sign-register{
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: rgb(194, 194, 194);
+    cursor: pointer;
+    float: right;
+}
+.sign-register:hover{
+    color: #ffffff;
+}
+.con-center{
+    width: 100%;
+}
+.con-center-1{
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+    font-size: 30px;
+    letter-spacing: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.con-center-2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.center-tab{
+    width: 18%;
+    height: 220px;
+}
+.tab-icon{
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+}
+.tab-title{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 19px;
+}
+.tab-txt{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 18px;
+    text-align: center;
+}
+.con-footer{
+    background: #393d49;
+    color: rgb(204, 204, 204);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    line-height: 30px;
+}
+
+/* 登录 */
+#signInBlock{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+.block-white{
+    width: 450px;
+    height: 350px;
+    background: #ffffff;
+    margin: auto auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+}
+.sign-xxx{
+    width: 100%;
+    text-align: right;
+    margin-right: 38px;
+    margin-top: 17px;
+}
+.sign-fa-xxx{
+    cursor: pointer;
+}
+.top{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.top-sign,.top-register{
+    width: 50%;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: rgb(129, 129, 129);
+    border-bottom: 2px solid rgb(196, 196, 196);
+    cursor: pointer;
+}
+.activeBorderColor{
+    border-bottom: 2px solid rgb(0, 185, 83);
+    color: black;
+}
+.center input{
+    width: 200px;
+    border: none;
+    outline: none;
+    height: 38px;
+    position: relative;
+    top: -1px;
+    background: transparent;
+}
+.center-acc,.center-pass{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid rgb(129, 129, 129);
+    margin-top: 25px;
+    border-radius: 20px;
+}
+.center,.center-register{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.sign-fa-style{
+    color:  rgb(129, 129, 129);
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+.btn-sign{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    background: rgb(0, 185, 83);
+    color: #ffffff;
+    margin-top: 25px;
+    letter-spacing: 8px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.btn-next-step{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    background: rgb(0, 185, 83);
+    color: #ffffff;
+    margin-top: 25px;
+    letter-spacing: 8px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.center-register-account,
+.center-register-password,
+.center-register-phoneNumber,
+.center-register-school,
+.center-register-year,
+.center-register-object{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid rgb(129, 129, 129);
+    margin-top: 25px;
+    border-radius: 20px;
+}
+/* 跨专业考生选择框 */
+.center-register-isover{
+    width: 100%;
+    color: rgb(134, 134, 134);
+    margin-top: 18px;
+}
+.isOverObject{
+    margin-left: 6px;
+}
+.center-register-VerificationCode{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 25px;
+}
+.center-register-VerificationCode input{
+    width: 170px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(129, 129, 129);
+    text-indent: 14px;
+    border-radius: 20px;
+}
+.center-register-account input,
+.center-register-password input,
+.center-register-phoneNumber input,
+.center-register-school input,
+.center-register-year input,
+.center-register-object input{
+    width: 200px;
+    border: none;
+    outline: none;
+    height: 38px;
+    position: relative;
+    top: -1px;
+    background: transparent;
+}
+.getCodeDiv{
+    padding: 0 18px;
+    height: 42px;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(0, 185, 83);
+    border: 1px solid rgb(0, 185, 83);
+    float: right;
+    cursor: pointer;
+    outline: none;
+    background: #fff;
+    border-radius: 20px;
+}
+
+#con-school{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 1000;
+}
+.school-block{
+    width: 760px;
+    height: auto;
+    background: #ffffff;
+    margin: auto auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 400px;
+    padding: 40px 30px;
+    overflow: hidden;
+}
+.block-top{
+    display: flex;
+    flex-direction: row;
+}
+.top-area{
+    width: 100px;
+    /* height: 100px; */
+    font-size: 18px;
+    margin-top: 6px;
+}
+.province-style{
+    display: inline-block;
+    padding: 6px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+.active-province{
+    background: rgb(0, 185, 83);
+    color: #ffffff;
+}
+.center-right{
+    width: 100%;
+}
+.center-school-li{
+    padding: 8px 12px;
+    display: inline-block;
+    cursor: pointer;
+}
+.head-logo{
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

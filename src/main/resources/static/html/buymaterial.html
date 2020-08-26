@@ -1,0 +1,144 @@
+<!-- 收费资料下单页面 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/buymaterial.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/buymaterial.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="con-top">
+            <div class="top-t">
+                <span class="top-span-1 span-active">确认订单</span>
+                <span class="top-span-2">&nbsp;&nbsp;>&nbsp;&nbsp;</span>
+                <span class="top-span-3">选择支付方式</span>
+                <span class="top-span-4">&nbsp;&nbsp;>&nbsp;&nbsp;</span>
+                <span class="top-span-5">支付成功</span>
+                <span class="top-span-6">&nbsp;&nbsp;>&nbsp;&nbsp;</span>
+                <span class="top-span-7">确认收货</span>
+                <span class="top-span-8">&nbsp;&nbsp;>&nbsp;&nbsp;</span>
+                <span class="top-span-9">交易结束</span>
+                <div class="top-tips">您好，本站支持在线自助下单，付款后我们次日发货。在校研究生勤工助学，谢谢支持</div>
+            </div>
+        </div>
+        <div class="con-center">
+            <!-- 确认订单 -->
+            <div class="center-box-1 clearfix">
+                <div>商品信息</div>
+                <div class="box-v">
+                    <div class="v-img">
+                        <img src="../img/1.jpg" alt="">
+                    </div>
+                    <div class="v-title">叫你啊到你家啊点拿尽快拿</div>
+                    <div class="v-price">¥8.88</div>
+                </div>
+                <div class="order-mess">
+                    <span>订单编号:</span>
+                    <span>23217328632846273</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>下单数量:</span>&nbsp;&nbsp;
+                    <button class="btn-plus">+</button>
+                    <input type="txet" value="1" class="inp-num"></input>
+                    <button class="btn-reduce">-</button>
+                </div>
+                <div class="line-s"></div>
+                <div class="top20px">配送方式</div>
+                <div class="kuaidi">
+                    <input type="radio" checked="checked" id="">&nbsp;&nbsp;&nbsp;
+                    快递<span class="kuaidi-o">手续费</span>
+                    <span class="kuaidi-price">0.00元</span>
+                    【本月包邮，月底截止，原价12元】 江浙沪2-3天，其他3-5天到
+                </div>
+                <div class="line-s"></div>
+                <div class="top20px">确认收货地址信息</div>
+                <div class="address-div clearfix">
+                    <div class="address-div-left">
+                        <div class="top20px">省、市、区/县:</div>
+                        <div>详细地址:</div>
+                        <div>收货人:</div>
+                        <div>E-mail:</div>
+                        <div>手机/电话:</div>
+                        <div>QQ号:</div>
+                    </div>
+                    <div class="address-div-right">
+                        <div class="top20px">
+                            省:
+                            <select name="" id="">
+                                <option value="未选择">未选择</option>
+                            </select>&nbsp;&nbsp;
+                            市:
+                            <select name="" id="">
+                                <option value="未选择">未选择</option>
+                            </select>&nbsp;&nbsp;
+                            县/区:
+                            <select name="" id="">
+                                <option value="未选择">未选择</option>
+                            </select>
+                            <span class="redstar">*</span>必选
+                        </div>
+                        <div>
+                            <input type="text" class="inp-address">
+                            <span class="redstar">*</span>请填写详细地址
+                        </div>
+                        <div>
+                            <input type="text" class="inp-receiver">
+                            <span class="redstar">*</span>请填写收货人姓名
+                        </div>
+                        <div><input type="text" class="inp-email"></div>
+                        <div>
+                            <input type="text" class="inp-phone">
+                            <span class="redstar">*</span>请填写可以联系到您到电话
+                        </div>
+                        <div>
+                            <input type="text" class="inp-qqnumber">
+                            <span class="redstar">*</span>便于线上联系
+                        </div>
+                    </div>
+                </div>
+                <div class="line-s"></div>
+                <div class="top20px">选填推荐码</div>
+                <div class="recommend-div">
+                    <input type="text" class="inp-recommend-number" placeholder="推荐码">
+                </div>
+                <div class="btn-up">提交订单</div>
+            </div>
+            <!-- 确认订单end -->
+
+            <!-- 选择支付方式 -->
+            <div class="center-box-2 clearfix">
+                <div>订单信息：123456789075</div>
+                <div class="box-v">
+                    <div class="v-img">
+                        <img src="../img/1.jpg" alt="">
+                    </div>
+                    <div class="v-title">叫你啊到你家啊点拿尽快拿</div>
+                    <div class="v-price">¥8.88</div>
+                </div>
+                <div class="line-s"></div>
+                <div class="top20px">选择支付方式:</div>
+                <div class="paybox">
+                    <div class="payway-1 pay-active"></div>
+                    <div class="payway-2"></div>
+                </div>
+                <div class="line-s"></div>
+                <div class="tipandprice clearfix">
+                    <div class="tips">
+                        已经为你锁定课程，请在<span class="pay-time"></span>内支付完成即可
+                    </div>
+                    <div class="fin-price">
+                        <span>应付金额：</span>
+                        <span class="pay-price">¥ 8.88</span>
+                    </div>
+                </div>
+                <div class="btn-pay">立即支付</div>
+                <div class="pay-tip">付款遇到问题 联系xxx</div>
+            </div>
+            <!-- 选择支付方式end -->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,403 @@
+body{
+    background: rgb(238, 238, 238);
+}
+/* 顶部背景 */
+.per-bg{
+    width: 100%;
+    height: 180px;
+    background: url(../img/temp1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.center-per{
+    width: 1024px;
+    margin: 0 auto;
+    min-height: 80%;
+    margin-top: 10px;
+    padding-bottom: 40px;
+}
+.personal-left{
+    width: 22%;
+    float: left;
+    min-height: 500px;
+    background: #ffffff;
+    border: 1px solid rgb(226, 226, 226);
+    position: relative;
+    top: -130px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    overflow: hidden;
+}
+.personal-right{
+    float: right;
+    width: 77%;
+    background: #ffffff;
+    padding-bottom: 50px;
+}
+/* 头像 */
+.personal-head{
+    width: 100%;
+    height: 164px;
+    background: url(../img/pbg.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head-img-div{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headImgUrl{
+    width: 94%;
+    border-radius: 50%;
+}
+.head-name{
+    margin-top: 5px;
+}
+.personal-nav{
+    padding-bottom: 10px;
+}
+.personal-ul-li{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.personal-ul-li-active,.personal-ul-li:hover{
+    background: rgb(245, 245, 245);
+    color: rgb(0, 183, 85);
+}
+/* 视频课程 */
+.right-box-0{
+    background: #ffffff;
+    min-height: 300px;
+    display: none;
+}
+.box0-title{
+    padding: 20px 40px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    font-size: 16px;
+    font-weight: bold;
+}
+.box0-abox{
+    margin-top: 14px;
+}
+.box0-abox:hover{
+    background: #f3f3f3;
+    cursor: pointer;
+}
+.box0-abox-left{
+    float: left;
+    width: 30%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box0-abox-right{
+    float: right;
+    width: 70%;
+    height: 130px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* 课程图片 */
+.scource-img{
+    width: 88%;
+}
+/* 课程名称 */
+.abox-title{
+    font-size: 16px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+}
+.abox-havedone{
+    margin-right: 20px;
+    color: rgb(0, 183, 85);
+}
+.abox-havetime{
+    margin-right: 20px;
+    height: 40px;
+    line-height: 40px;
+    color: #7e7e7e;
+}
+.abox-haveat{
+    color: #7e7e7e;
+}
+.abox-btn-div{
+    width: 100%;
+}
+.btn-study{
+    float: right;
+    margin-right: 40px;
+    background: rgb(0, 183, 85);
+    color: #ffffff;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 18px;
+}
+/* 我的考试 */
+.right-box-1{
+    padding: 20px 30px;
+    display: none
+}
+.box1-ul{
+    height: 30px;
+    line-height: 40px;
+    padding-bottom: 20px 40px;
+}
+.box1-li{
+    float: left;
+    margin-right: 26px;
+    cursor: pointer;
+}
+.box1-li-active{
+    color: rgb(0, 183, 85);
+}
+.a-exam{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+.exam-title{
+    width: 50%;
+}
+.exam-status{
+    width: 35%;
+}
+.exam-do{
+    width: 15%;
+}
+/* 我的消息 */
+.right-box-2{
+    padding: 20px 30px;
+    display: none;
+}
+.a-message{
+    border-bottom: 1px solid rgb(218, 218, 218);
+    padding: 18px 0;
+}
+.a-message:hover{
+    cursor: pointer;
+    color: rgb(0, 183, 85);
+}
+.mess-name{
+    color: red;
+}
+.mess-time{
+    color: gray;
+    margin-top: 10px;
+}
+/* 我的收藏 */
+.right-box-3{
+    display: none;
+}
+.a-box3{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+.box3-type{
+    width: 8%;
+}
+.box3-name{
+    width: 50%;
+}
+.box3-time{
+    width: 30%;
+    color: rgb(146, 146, 146);
+    font-weight: 170;
+}
+.box3-do{
+    width: 12%;
+}
+/* 我的发帖 */
+.right-box-4{
+    padding-top: 20px;
+    display: none;
+}
+.a-forum-box{
+    height: 80px;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+.a-forum-box:hover{
+    cursor: pointer;
+    background: rgb(247, 255, 251);
+}
+.box-left-head{
+    width: 80px;
+    height: 80px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.head-img{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+}
+.box-right{
+    float: left;
+}
+.box-right-top{
+    display: flex;
+    flex-direction: row;
+    padding-top: 18px;
+}
+.box-right-bottom{
+    width: 135%;
+    padding-top: 10px;
+}
+.box-title{
+    margin-right: 14px;
+}
+.box-title:hover{
+    color: rgb(0, 183, 85);
+}
+/* 置顶 */
+.label-ding{
+    border-radius: 4px;
+    background: rgb(0, 183, 85);
+    color: #ffffff;
+    padding: 2px 6px;
+    font-size: 13px;
+}
+.dian{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.box-writer{
+    float: left;
+    color: #f39a24;
+}
+.box-time{
+    color: #949494;
+    float: left;
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.box-where{
+    color: #949494;
+    margin-left: 10px;
+    float: left;
+    font-size: 12px;
+}
+.where{
+    color: black;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 12px;
+}
+.where:hover{
+    color: rgb(0, 183, 85);
+    cursor: pointer;
+}
+.box-new{
+    color: #949494;
+    float: left;
+    margin-left: 20px;
+    font-size: 12px;
+}
+.box-mess-div{
+    float: right;
+    font-size: 12px;
+    color: #949494;
+}
+/* 订单管理 */
+.right-box-5{
+    padding: 20px 30px;
+    display: none;
+}
+.title-name,.a-box5-name{
+    width: 35%;
+    float: left;
+}
+.a-box5-name,.a-box5-money,.a-box5-status,.box5-get-t{
+    line-height: 50px;
+}
+.title-money,.a-box5-money{
+    width: 15%;
+    float: left;
+}
+.title-status,.a-box5-status{
+    width: 18%;
+    color: rgb(0, 183, 85);
+    float: left;
+    text-align: center;
+}
+.title-get,.a-box5-get{
+    width: 32%;
+    float: left;
+    text-align: center;
+}
+.a-box5-get{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.a-box5{
+    height: 110px;
+    border-top: 1px solid rgb(230, 230, 230);
+    margin-top: 14px;
+}
+.a-box5-top{
+    height: 90px;
+}
+.a-box5-bottom{
+    height: 20px;
+}
+/* 设置 */
+.right-box-6{
+    padding: 20px 30px;
+    display: none;
+}
+.baseinfo-title{
+    font-size: 16px;
+    font-weight: bold;
+    height: 35px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    margin-top: 30px;
+}
+.inp-acc{
+    margin-top: 10px;
+    width: 200px;
+}
+.baseinfo-year,.baseinfo-acc,.baseinfo-school,.btn-div-up,.baseinfo-object{
+    margin-top: 10px;
+    padding-left: 50px;
+}
+#sel-year{
+    width: 150px;
+    height: 34px;
+    background: none;
+    border-color: rgb(218, 218, 218);
+}
+.inp-school,.inp-school-1,.inp-phone,.inp-yan,.inp-object{
+    width: 200px;
+}
+.btn-up{
+    margin-top: 14px;
+}

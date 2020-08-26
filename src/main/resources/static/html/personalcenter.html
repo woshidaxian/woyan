@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 个人中心 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/personalcenter.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/vue.min.js"></script>
+    <script src="../layui/layui.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="top-bar">
+            <div class="school-div">
+                <span class="school-name">未选择</span>
+                <span class="fa fa-caret-down" style="margin-left: 6px;"></span>
+            </div>
+            <div class="nav-div">
+                <ul class="layui-nav" lay-filter="">
+                    <li class="layui-nav-item"><a href="index.html">首页</a></li>
+                    <li class="layui-nav-item"><a href="videos.html">视频学习</a></li>
+                    <li class="layui-nav-item"><a href="material.html">考研资料</a></li>
+                    <li class="layui-nav-item"><a href="examination.html">在线考试</a></li>
+                    <li class="layui-nav-item"><a href="exam.html">题库</a></li>
+                    <li class="layui-nav-item"><a href="kaoyannews.html">考研资讯</a></li>
+                    <li class="layui-nav-item"><a href="forum.html">论坛</a></li>
+                    <li class="layui-nav-item"><a href="wodata.html">蜗数据</a></li>
+                    <li class="layui-nav-item layui-this"><a href="personalcenter.html">个人中心</a></li>
+                </ul>
+            </div>
+            <div class="sign-register">
+                登录｜注册
+            </div>
+        </div>
+        <div class="top-bar-none"></div>
+        <div class="per-bg"></div>
+        <div class="center-per clearfix">
+            <div class="personal-left">
+                <div class="personal-head">
+                    <div class="head-img-div">
+                        <img src="../img/head.jpg" alt="" class="headImgUrl">
+                    </div>
+                    <div class="head-name">Gang</div>
+                </div>
+                <ul class="personal-nav">
+                    <!-- <li class="personal-ul-li personal-ul-li-active">
+                        首页
+                    </li> -->
+                    <li class="personal-ul-li personal-ul-li-active">
+                        视频课程
+                    </li>
+                    <li class="personal-ul-li">
+                        我的考试
+                    </li>
+                    <li class="personal-ul-li">
+                        我的消息<span class="layui-badge" style="margin-left: 4px;">6</span>
+                    </li>
+                    <li class="personal-ul-li">
+                        我的收藏
+                    </li>
+                    <li class="personal-ul-li">
+                        我的发帖
+                    </li>
+                    <li class="personal-ul-li">
+                        订单管理
+                    </li>
+                    <li class="personal-ul-li">
+                        设置
+                    </li>
+                </ul>
+            </div>
+            <div class="personal-right">
+                <!-- 视频课程 -->
+                <div class="right-box-0 boxstyle">
+                    <div class="box0-title">我的课程</div>
+                    <!-- 视频列表添加到这里 -->
+                </div>
+                <!-- 我的考试 -->
+                <div class="right-box-1 boxstyle">
+                    <ul class="box1-ul clearfix">
+                        <li class="box1-li box1-li-active">全部</li>
+                        <li class="box1-li">已报名</li>
+                        <li class="box1-li">进行中</li>
+                        <li class="box1-li">已结束</li>
+                    </ul><hr/>
+                    <div class="a-exam">
+                        <div class="exam-title">
+                            <span class="layui-badge-dot"></span>
+                            极限与连续
+                        </div>
+                        <div class="exam-status">已结束</div>
+                        <div class="exam-do">
+                            <button class="layui-btn layui-btn-sm">查看</button>
+                        </div>
+                    </div>
+                    <div class="a-exam">
+                        <div class="exam-title">
+                            <span class="layui-badge-dot layui-bg-green"></span>
+                            极限与连续
+                        </div>
+                        <div class="exam-status">进行中</div>
+                        <div class="exam-do">
+                            <button class="layui-btn layui-btn-sm">进入考试</button>
+                        </div>
+                    </div>
+                    <div class="a-exam">
+                        <div class="exam-title">
+                            <span class="layui-badge-dot layui-bg-blue"></span>
+                            极限与连续
+                        </div>
+                        <div class="exam-status">已报名</div>
+                        <div class="exam-do">
+                            <button class="layui-btn layui-btn-sm">取消报名</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 我的消息 -->
+                <div class="right-box-2 boxstyle">
+                    <div class="a-message">
+                        <span class="mess-name">alex：</span>
+                        <span class="mess-text">测试文字测设文字测试文字测试问之测试的</span>
+                        <div class="mess-t clearfix">
+                            <div class="mess-time">发表于 2019-11-11 12:12</div>
+                        </div>
+                    </div>
+                    <div class="a-message">
+                        <span class="mess-name">alex：</span>
+                        <span class="mess-text">测试文字测设文字测试文字测试问之测试的</span>
+                        <div class="mess-t clearfix">
+                            <div class="mess-time">发表于 2019-11-11 12:12</div>
+                        </div>
+                    </div>
+                    <div class="a-message">
+                        <span class="mess-name">alex：</span>
+                        <span class="mess-text">测试文字测设文字测试文字测试问之测试的</span>
+                        <div class="mess-t clearfix">
+                            <div class="mess-time">发表于 2019-11-11 12:12</div>
+                        </div>
+                    </div>
+                    <div class="a-message">
+                        <span class="mess-name">alex：</span>
+                        <span class="mess-text">测试文字测设文字测试文字测试问之测试的</span>
+                        <div class="mess-t clearfix">
+                            <div class="mess-time">发表于 2019-11-11 12:12</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 我的收藏 -->
+                <div class="right-box-3 boxstyle">
+                    <div class="a-box3">
+                        <div class="box3-type"><span class="layui-badge layui-bg-green">视频</span></div>
+                        <div class="box3-name"> 测试文字测试文字测试文字</div>
+                        <div class="box3-time">收藏于2019-11-11 11:11</div>
+                        <div class="box3-do">
+                            <button class="layui-btn layui-btn-warm layui-btn-sm">取消收藏</button>
+                        </div>
+                    </div>
+                    <div class="a-box3">
+                        <div class="box3-type"><span class="layui-badge layui-bg-green">视频</span></div>
+                        <div class="box3-name"> 测试文字测试文字测试文字</div>
+                        <div class="box3-time">收藏于2019-11-11 11:11</div>
+                        <div class="box3-do">
+                            <button class="layui-btn layui-btn-warm layui-btn-sm">取消收藏</button>
+                        </div>
+                    </div>
+                    <div class="a-box3">
+                        <div class="box3-type"><span class="layui-badge layui-bg-green">视频</span></div>
+                        <div class="box3-name"> 测试文字测试文字测试文字</div>
+                        <div class="box3-time">收藏于2019-11-11 11:11</div>
+                        <div class="box3-do">
+                            <button class="layui-btn layui-btn-warm layui-btn-sm">取消收藏</button>
+                        </div>
+                    </div>
+                    <div class="a-box3">
+                        <div class="box3-type"><span class="layui-badge layui-bg-green">视频</span></div>
+                        <div class="box3-name"> 测试文字测试文字测试文字</div>
+                        <div class="box3-time">收藏于2019-11-11 11:11</div>
+                        <div class="box3-do">
+                            <button class="layui-btn layui-btn-warm layui-btn-sm">取消收藏</button>
+                        </div>
+                    </div>
+                    <div class="a-box3">
+                        <div class="box3-type"><span class="layui-badge layui-bg-green">视频</span></div>
+                        <div class="box3-name"> 测试文字测试文字测试文字</div>
+                        <div class="box3-time">收藏于2019-11-11 11:11</div>
+                        <div class="box3-do">
+                            <button class="layui-btn layui-btn-warm layui-btn-sm">取消收藏</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 我的发帖 -->
+                <div class="right-box-4 boxstyle">
+                    <div class="a-forum-box clearfix">
+                        <div class="box-left-head">
+                            <img src="../img/head.jpg" alt="" class="head-img">
+                        </div>
+                        <div class="box-right">
+                            <div class="box-right-top">
+                                <div class="box-title">[杭电考研]想了解一下机器学习与数据挖掘专业的情况</div>
+                                <div class="box-label">
+                                    <!-- <span class="label-ding">置顶</span> -->
+                                </div>
+                            </div>
+                            <div class="box-right-bottom clearfix">
+                                <div class="box-writer">gang</div>
+                                <div class="box-time">2019-11-11</div>
+                                <div class="box-where">发表在<span class="where">[我要提问]</span></div>
+                                <div class="box-new">1小时前回复</div>
+                                <div class="box-mess-div">
+                                    <span>回复</span>
+                                    <span>88</span>
+                                    <span class="dian">·</span>
+                                    <span>赞</span>
+                                    <span>99</span>
+                                    <span class="dian">·</span>
+                                    <span>浏览</span>
+                                    <span>8876</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a-forum-box clearfix">
+                        <div class="box-left-head">
+                            <img src="../img/head.jpg" alt="" class="head-img">
+                        </div>
+                        <div class="box-right">
+                            <div class="box-right-top">
+                                <div class="box-title">[杭电考研]想了解一下机器学习与数据挖掘专业的情况</div>
+                                <div class="box-label">
+                                    <!-- <span class="label-ding">置顶</span> -->
+                                </div>
+                            </div>
+                            <div class="box-right-bottom clearfix">
+                                <div class="box-writer">gang</div>
+                                <div class="box-time">2019-11-11</div>
+                                <div class="box-where">发表在<span class="where">[我要提问]</span></div>
+                                <div class="box-new">1小时前回复</div>
+                                <div class="box-mess-div">
+                                    <span>回复</span>
+                                    <span>88</span>
+                                    <span class="dian">·</span>
+                                    <span>赞</span>
+                                    <span>99</span>
+                                    <span class="dian">·</span>
+                                    <span>浏览</span>
+                                    <span>8876</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a-forum-box clearfix">
+                        <div class="box-left-head">
+                            <img src="../img/head.jpg" alt="" class="head-img">
+                        </div>
+                        <div class="box-right">
+                            <div class="box-right-top">
+                                <div class="box-title">[杭电考研]想了解一下机器学习与数据挖掘专业的情况</div>
+                                <div class="box-label">
+                                    <!-- <span class="label-ding">置顶</span> -->
+                                </div>
+                            </div>
+                            <div class="box-right-bottom clearfix">
+                                <div class="box-writer">gang</div>
+                                <div class="box-time">2019-11-11</div>
+                                <div class="box-where">发表在<span class="where">[我要提问]</span></div>
+                                <div class="box-new">1小时前回复</div>
+                                <div class="box-mess-div">
+                                    <span>回复</span>
+                                    <span>88</span>
+                                    <span class="dian">·</span>
+                                    <span>赞</span>
+                                    <span>99</span>
+                                    <span class="dian">·</span>
+                                    <span>浏览</span>
+                                    <span>8876</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 订单管理 -->
+                <div class="right-box-5 boxstyle">
+                    <div class="box5-title clearfix">
+                        <div class="title-name">购买的课程/资料</div>
+                        <div class="title-money">金额</div>
+                        <div class="title-status">状态</div>
+                        <div class="title-get">资料送达</div>
+                    </div>
+                    <div class="a-box5">
+                        <div class="a-box5-top">
+                            <div class="a-box5-name">
+                                <span class="layui-badge layui-bg-green">视频</span>
+                                测试文字测试文字测试嗯文字
+                            </div>
+                            <div class="a-box5-money">¥ 8.88</div>
+                            <div class="a-box5-status">订单已完成</div>
+                            <div class="a-box5-get">
+                                <div class="box5-get-t">韵达快递</div>
+                                <div class="box5-get-num">43354543354433</div>
+                            </div>
+                        </div>
+                        <div class="a-box5-bottom">
+                            <span>订单号：</span><span class="a-box5-num">432442423432432</span>
+                            <span>订单创建时间：</span><span class="a-box5-time">2019-11-11 11:11</span>
+                        </div>
+                    </div>
+                    <div class="a-box5">
+                        <div class="a-box5-top">
+                            <div class="a-box5-name">
+                                <span class="layui-badge layui-bg-green">视频</span>
+                                测试文字测试文字测试嗯文字
+                            </div>
+                            <div class="a-box5-money">¥ 8.88</div>
+                            <div class="a-box5-status">订单已完成</div>
+                            <div class="a-box5-get">
+                                <div class="box5-get-t">韵达快递</div>
+                                <div class="box5-get-num">43354543354433</div>
+                            </div>
+                        </div>
+                        <div class="a-box5-bottom">
+                            <span>订单号：</span><span class="a-box5-num">432442423432432</span>
+                            <span>订单创建时间：</span><span class="a-box5-time">2019-11-11 11:11</span>
+                        </div>
+                    </div>
+                    <div class="a-box5">
+                        <div class="a-box5-top">
+                            <div class="a-box5-name">
+                                <span class="layui-badge layui-bg-green">视频</span>
+                                测试文字测试文字测试嗯文字
+                            </div>
+                            <div class="a-box5-money">¥ 8.88</div>
+                            <div class="a-box5-status">订单已完成</div>
+                            <div class="a-box5-get">
+                                <div class="box5-get-t">韵达快递</div>
+                                <div class="box5-get-num">43354543354433</div>
+                            </div>
+                        </div>
+                        <div class="a-box5-bottom">
+                            <span>订单号：</span><span class="a-box5-num">432442423432432</span>
+                            <span>订单创建时间：</span><span class="a-box5-time">2019-11-11 11:11</span>
+                        </div>
+                    </div>
+                    <div class="a-box5">
+                        <div class="a-box5-top">
+                            <div class="a-box5-name">
+                                <span class="layui-badge layui-bg-green">视频</span>
+                                测试文字测试文字测试嗯文字
+                            </div>
+                            <div class="a-box5-money">¥ 8.88</div>
+                            <div class="a-box5-status">订单已完成</div>
+                            <div class="a-box5-get">
+                                <div class="box5-get-t">韵达快递</div>
+                                <div class="box5-get-num">43354543354433</div>
+                            </div>
+                        </div>
+                        <div class="a-box5-bottom">
+                            <span>订单号：</span><span class="a-box5-num">432442423432432</span>
+                            <span>订单创建时间：</span><span class="a-box5-time">2019-11-11 11:11</span>
+                        </div>
+                    </div>
+                    <div class="a-box5">
+                        <div class="a-box5-top">
+                            <div class="a-box5-name">
+                                <span class="layui-badge layui-bg-green">视频</span>
+                                测试文字测试文字测试嗯文字
+                            </div>
+                            <div class="a-box5-money">¥ 8.88</div>
+                            <div class="a-box5-status">订单已完成</div>
+                            <div class="a-box5-get">
+                                <div class="box5-get-t">韵达快递</div>
+                                <div class="box5-get-num">43354543354433</div>
+                            </div>
+                        </div>
+                        <div class="a-box5-bottom">
+                            <span>订单号：</span><span class="a-box5-num">432442423432432</span>
+                            <span>订单创建时间：</span><span class="a-box5-time">2019-11-11 11:11</span>
+                        </div>
+                    </div>
+                    <div class="a-box5">
+                        <div class="a-box5-top">
+                            <div class="a-box5-name">
+                                <span class="layui-badge layui-bg-green">视频</span>
+                                测试文字测试文字测试嗯文字
+                            </div>
+                            <div class="a-box5-money">¥ 8.88</div>
+                            <div class="a-box5-status">订单已完成</div>
+                            <div class="a-box5-get">
+                                <div class="box5-get-t">韵达快递</div>
+                                <div class="box5-get-num">43354543354433</div>
+                            </div>
+                        </div>
+                        <div class="a-box5-bottom">
+                            <span>订单号：</span><span class="a-box5-num">432442423432432</span>
+                            <span>订单创建时间：</span><span class="a-box5-time">2019-11-11 11:11</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 设置 -->
+                <div class="right-box-6 boxstyle">
+                    <div class="box6-baseinfo">
+                        <div class="baseinfo-title">基本信息</div>
+                    </div>
+                    <div class="baseinfo-acc">
+                        <label class="layui-form-label">用户名</label>
+                        <div class="layui-input-block">
+                            <input type="text" class="layui-input inp-acc" placeholder="用户名">
+                        </div>
+                    </div>
+                    <div class="baseinfo-year">
+                        <label class="layui-form-label">考研年份</label>
+                        <div class="layui-input-block">
+                            <select name="year" id="sel-year">
+                                <option value="0">请选择毕业年份</option>
+                                <option value="">2022</option>
+                                <option value="">2021</option>
+                                <option value="">2020</option>
+                                <option value="">2019</option>
+                            </select>  
+                        </div>
+                    </div>
+                    <div class="baseinfo-school">
+                        <label class="layui-form-label">我的学校</label>
+                        <div class="layui-input-block">
+                            <input type="text" class="layui-input inp-school">
+                        </div>
+                    </div>
+                    <div class="baseinfo-school">
+                        <label class="layui-form-label">考研学校</label>
+                        <div class="layui-input-block">
+                            <input type="text" class="layui-input inp-school-1">
+                        </div>
+                    </div>
+                    <div class="baseinfo-object">
+                        <label class="layui-form-label">考研专业</label>
+                        <div class="layui-input-block">
+                            <input type="text" class="layui-input inp-object">
+                        </div>
+                    </div>
+                    <div class="btn-div-up">
+                        <label class="layui-form-label"></label>
+                        <div class="layui-input-block">
+                            <button class="layui-btn btn-up">保存</button>
+                        </div>
+                    </div>
+                    <div class="box6-baseinfo">
+                        <div class="baseinfo-title">更改手机号</div>
+                    </div>
+                    <div class="baseinfo-school">
+                        <label class="layui-form-label">新手机号</label>
+                        <div class="layui-input-block">
+                            <input type="text" class="layui-input inp-phone">
+                        </div>
+                    </div>
+                    <div class="baseinfo-school">
+                        <label class="layui-form-label">验证码</label>
+                        <div class="layui-input-block">
+                            <input type="text" class="layui-input inp-yan">
+                            <button class="layui-btn btn-up">获取验证码</button>
+                        </div>
+                    </div>
+                    <div class="btn-div-up">
+                        <label class="layui-form-label"></label>
+                        <div class="layui-input-block">
+                            <button class="layui-btn btn-up">保存</button>
+                        </div>
+                    </div>
+                    <div class="box6-baseinfo">
+                        <div class="baseinfo-title">更改密码</div>
+                    </div>
+                    <div class="baseinfo-school">
+                        <label class="layui-form-label">原密码</label>
+                        <div class="layui-input-block">
+                            <input type="text" class="layui-input inp-phone">
+                        </div>
+                    </div>
+                    <div class="baseinfo-school">
+                        <label class="layui-form-label">新密码</label>
+                        <div class="layui-input-block">
+                            <input type="text" class="layui-input inp-phone">
+                        </div>
+                    </div>
+                    <div class="baseinfo-school">
+                        <label class="layui-form-label">确认新密码</label>
+                        <div class="layui-input-block">
+                            <input type="text" class="layui-input inp-phone">
+                        </div>
+                    </div>
+                    <div class="btn-div-up">
+                        <label class="layui-form-label"></label>
+                        <div class="layui-input-block">
+                            <button class="layui-btn btn-up">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="con-footer">
+            <div>
+                蜗研简介 ┊ 联系我们 ┊ 意见反馈 ┊ 免责声明
+            </div>
+            <div>
+                © 2018 - 2019 woyanwang. All Rights Reserved.如有问题请发邮件到 414709943@qq.com
+            </div>
+        </div>
+    </div>
+    <div id="signInBlock" v-if="signIsShow">
+        <div class="block-white">
+            <!-- 退出登录 -->
+            <div class="sign-xxx">
+                <span class="fa fa-close sign-fa-xxx" @click="btnSignX"></span>
+            </div>
+            <!-- 登录注册切换 -->
+            <div class="top">
+                <div class="top-sign" :class="{ activeBorderColor: SignIsActive }" @click="btnS">登录</div>
+                <div class="top-register" :class="{ activeBorderColor: isActive }" @click="btnR">注册</div>
+            </div>
+            <!-- 登录板块 -->
+            <div class="center" v-if="nowSign">
+                <div class="center-acc">
+                    <span class="fa fa-user sign-fa-style"></span>
+                    <input type="text" placeholder="请输入账号" v-model="signAccount">
+                </div>
+                <div class="center-pass">
+                    <span class="fa fa-lock sign-fa-style"></span>
+                    <input type="password" placeholder="请输入密码" v-model="signPassword">
+                </div>
+                <div class="btn-sign" @click="btnSign">登录</div>
+            </div>
+            <!-- 注册板块 -->
+            <div class="center-register" v-else>
+                <div v-if="register_step">
+                    <div class="center-register-account">
+                        <span class="fa fa-user sign-fa-style"></span>
+                        <input type="text" placeholder="请输入用户名" v-model="registerAccount">
+                    </div>
+                    <div class="center-register-password">
+                        <span class="fa fa-lock sign-fa-style"></span>
+                        <input type="password" placeholder="请输入密码" v-model="registerPassword">
+                    </div>
+                    <div class="center-register-phoneNumber">
+                        <span class="fa fa-phone sign-fa-style"></span>
+                        <input type="text" placeholder="请输入手机号" v-model="registerPhone">
+                    </div>
+                    <div class="center-register-VerificationCode">
+                        <input type="text" placeholder="请输入短信验证码" v-model="registerVerificationCode">
+                        <button class="getCodeDiv" @click="btnGetCode" :disabled="btnIsActive">{{textCode}}</button>
+                    </div>
+                    <div class="btn-next-step" @click="btnNextStep">下一步</div>
+                </div>
+                <div v-else>
+                    <div class="center-register-school" @click="btnSchool1">
+                        <span class="fa fa-book sign-fa-style"></span>
+                        <input type="text" placeholder="选择目前就读院校" v-model="registerSchool1">
+                    </div>
+                    <div class="center-register-year">
+                        <span class="fa fa-hourglass-2 sign-fa-style"></span>
+                        <input type="text" placeholder="输入考研年份" v-model="registerYear">
+                    </div>
+                    <div class="center-register-school" @click="btnSchoolO">
+                        <span class="fa fa-book sign-fa-style"></span>
+                        <input type="text" placeholder="选择目标院校" v-model="registerSchool">
+                    </div>
+                    <div class="center-register-object" @click="btnObject">
+                        <span class="fa fa-mortar-board sign-fa-style"></span>
+                        <input type="text" placeholder="选择报考的专业" v-model="registerObject">
+                    </div>
+                    <div class="center-register-isover">
+                        如果你是跨专业考生请在这里打钩
+                        <input type="checkbox" class="isOverObject" v-model="isChecked">
+                    </div>
+                    <div class="btn-sign" @click="btnRegister">注册</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="con-school">
+        <div class="school-block">
+            <div class="block-top">
+                <div class="top-area">
+                    地区选择 >
+                </div>
+                <div class="top-area-a"></div>
+            </div>
+            <hr>
+            <div class="block-top">
+                <div class="top-area">
+                    可选学校 >
+                </div>
+                <div class="center-right"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/personalcenter.js"></script>
+</body>
+</html>

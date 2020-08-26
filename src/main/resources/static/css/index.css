@@ -1,0 +1,487 @@
+.con-index{
+    padding-bottom: 40px;
+}
+.index-carousel{
+    height: 330px;
+}
+.index-newgood{
+    width: 1200px;
+    min-height: 500px;
+    margin: 0 auto;
+}
+.title-newgood,.title-bestma,.title-wodata{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 36px;
+}
+/* 蜗数据 */
+.wodata{
+    width: 1200px;
+    margin: 0 auto;
+}
+#chart0{
+    width: 100%;
+    height: 400px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+/* 查看更多 */
+.lookmore{
+    float: right;
+    font-size: 15px;
+    font-weight: normal;
+    position: relative;
+    left: -30px;
+    top: 14px;
+}
+.newgood-box{
+    margin-top: 20px;
+}
+.top-img-div{
+    width: 100%;
+    height: 160px;
+    background: url(../img/11.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+}
+.a-newgood-box{
+    width: 23%;
+    margin-right: 2%;
+    float: left;
+    margin-top: 1%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.a-newgood-box:hover .newgood-des{
+    color: #f01414;
+}
+.newgood-des{
+    padding: 4px 6px;
+    font-size: 16px;
+    font-weight: bold;
+    max-height: 46px;
+    line-height: 26px;
+    overflow: hidden;
+    transition: all .3s;
+}
+.newgood-bottom{
+    margin-top: 18px;
+}
+.newgood-price{
+    float: left;
+    width: 50%;
+    font-size: 13px;
+    text-indent: 6px;
+}
+.newgood-havebuy{
+    float: left;
+    width: 48%;
+    text-align: right;
+    font-size: 12px;
+    color: gray;
+}
+/* 精品资料 */
+.bestma-div{
+    width: 100%;
+    background: #f8fafc;
+    min-height: 300px;
+    padding-bottom: 30px;
+}
+.index-bestma{
+    width: 1200px;
+    margin: 0 auto;
+}
+.title-bestma{
+    padding-top: 23px;
+    padding-bottom: 30px;
+}
+.m-div{
+    width: 275px;
+    margin-left: 9px;
+    margin-right: 9px;
+    float: left;
+    margin-bottom: 18px;
+    transition: all 0.6s;
+    border-radius: 8px;
+    padding-bottom: 14px;
+}
+.m-div:hover .m-div-title{
+    color: rgb(255, 70, 70);
+}
+.m-div-o{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 1px solid rgb(223, 223, 223);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(0, 185, 83);
+    cursor: pointer;
+}
+.m-div:hover{
+    box-shadow: 0px 0px 10px -2px;
+    cursor: pointer;
+    background: #ffffff;
+}
+.m-div-top-img{
+    width: 100%;
+    height: 165px;
+    background: url('../img/1.jpg') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.m-div-top{
+    width: 100%;
+    height: 165px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.m-div-top:hover .m-div-top-img{
+    transform: scale(1.2);
+}
+.m-div-label{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2px 10px;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    float: left;
+    position: relative;
+    top: -30px;
+    left: 6px;
+    font-size: 12px;
+}
+.m-div-title{
+    padding: 6px 8px;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all .3s;
+}
+.m-div-saw{
+    padding: 6px 8px;
+    color: rgb(192, 192, 192);
+    font-size: 12px;
+}
+.m-div-intro{
+    padding: 3px 8px;
+    color: rgb(145, 145, 145);
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 200;
+}
+.m-div-ppp{
+    padding: 7px 8px;
+}
+.m-span-comment{
+    float: right;
+    font-size: 12px;
+    color: rgb(145, 145, 145);
+}
+.m-span-price{
+    color: rgb(90, 90, 90);
+    font-size: 15px;
+}
+/* .a-bestma-box{
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+}
+.a-bestma-box:hover .a-bestma-title{
+    color: #f01414;
+}
+.a-bestma-left{
+    float: left;
+    width: 26%;
+    height: 155px;
+    overflow: hidden;
+}
+.bg1{
+    width: 100px;
+    height: 100px;
+    background: url(../img/book1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    position: relative;
+    top: 45px;
+    opacity: 0.3;
+    border-radius: 6px;
+    transition: all .3s;
+}
+.bg2{
+    width: 110px;
+    height: 110px;
+    background: url(../img/book1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    position: relative;
+    top: -69px;
+    opacity: 0.6;
+    border-radius: 6px;
+    transition: all .3s;
+}
+.bg3{
+    width: 120px;
+    height: 120px;
+    background: url(../img/book1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    position: relative;
+    top: -193px;
+    border-radius: 6px;
+    transition: all .3s;
+}
+.a-bestma-box:hover .bg1{
+    width: 96px;
+    top: 41px;
+}
+.a-bestma-box:hover .bg2{
+    width: 106px;
+    top: -74px;
+}
+.a-bestma-box:hover .bg3{
+    top: -199px;
+    cursor: pointer;
+}
+.bestma-img{
+    width: 100px;
+}
+.a-bestma-right{
+    width: 74%;
+    float: left;
+    padding-top: 10px;
+}
+.a-bestma-price{
+    float: left;
+    width: 40%;
+    color: rgb(126, 126, 126);
+    font-size: 13px;
+}
+.a-bestma-havebuy{
+    font-size: 12px;
+    float: left;
+}
+.a-bestma-title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    transition: all .3s;
+}
+.a-bestma-des{
+    color: rgb(78, 78, 78);
+    margin-bottom: 9px;
+    height: 60px;
+    overflow: hidden;
+    width: 90%;
+} */
+/* 近期考试 */
+.lately-exam{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.title-lately{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+.exam-title{
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    /* background: rgb(247, 247, 247); */
+}
+.exam-name{
+    width: 28%;
+    text-indent: 8px;
+}
+.exam-begin-time,.exam-end-time{
+    width: 22%;
+}
+.exam-status{
+    width: 12%;
+}
+.exam-subject{
+    width: 14%;
+}
+.exam-type{
+    width: 11%;
+    text-align: center;
+}
+.exam-do{
+    text-align: center;
+    width: 15%;
+}
+.a-exam-box{
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+.a-exam-box:hover{
+    background: rgb(243, 243, 243);
+}
+.right8px{
+    margin-right: 8px;
+}
+/* 考试状态 */
+.status-green{
+    color: green;
+    font-weight: bold;
+}
+.status-red{
+    color: red;
+    font-weight: bold;
+}
+.status-blue{
+    color: rgb(0, 195, 255);
+    font-weight: bold;
+}
+/* 推荐题库 */
+.recommend-itembank-div{
+    background: #f8fafc;
+    padding-bottom: 30px;
+    padding-top: 1px;
+}
+.recommend-itembank{
+    width: 1200px;
+    margin: 0 auto;
+}
+.title-itembank{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 36px;
+    padding-bottom: 30px;
+}
+.con-itembank{
+    width: 1200px;
+    margin-left: 20px;
+}
+.a-itembank{
+    width: 185px;
+    height: 230px;
+    padding: 15px;
+    /* margin-right: 20px; */
+    /* margin-bottom: 15px; */
+    border: 1px solid gainsboro;
+    /* float: left; */
+}
+.a-itembank h1{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    height: 100px;
+    width: 185px;
+    overflow: hidden;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.a-itembank-logo{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgb(228, 228, 228);
+    vertical-align: middle;
+    line-height: 80px;
+}
+.logo-img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+.a-itembank-hot{
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    color: #666;
+}
+.a-itembank-give{
+    width: 100%;
+    height: 50px;
+    padding-top: 30px;
+    margin: 0 auto;
+    text-align: center;
+    color: #25bb9b;
+    vertical-align: middle;
+    display: none;
+}
+.btn-begin-itembank{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    background: #25bb9b;
+    border-radius: 6px;
+    margin-top: 10px;
+    display: none;
+}
+.btn-begin-itembank:hover{
+    background: #1e9b80;
+    cursor: pointer;
+}
+.a-itembank-box{
+    width: 215px;
+    float: left;
+    /* padding: 15px; */
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+.a-itembank-box:hover .a-itembank-logo{
+    display: none;
+    cursor: pointer;
+}
+.a-itembank-box:hover .a-itembank-hot{
+    display: none;
+    cursor: pointer;
+}
+.a-itembank-box:hover .btn-begin-itembank{
+    display: block;
+    cursor: pointer;
+}
+.a-itembank-box:hover .a-itembank-give{
+    display: block;
+    cursor: pointer;
+}
+.a-itembank-box:hover .star-t{
+    color: #25bb9b;
+}
+.nandu{
+    height: 50px;
+    line-height: 50px;
+    text-indent: 20px;
+}
+.star-style{
+    color: #feb200;
+    font-size: 20px;
+}
+/* 考研咨询 */
+.index-consultation{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+.contact-img{
+    width: 160px;
+    margin-bottom: 10px;
+}

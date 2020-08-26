@@ -1,0 +1,245 @@
+body{
+    background: rgb(235, 235, 235);
+}
+.center-forum{
+    width: 1024px;
+    /* height: 100%; */
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    min-height: 100%;
+}
+/* 左半部分帖子列表 */
+.forum-left{
+    float: left;
+    width: 72%;
+    /* height: 100%; */
+    background: #ffffff;
+    border: 1px solid rgb(218, 218, 218);
+    padding-bottom: 40px;
+}
+/* 我要发布按钮 */
+.release-btn-div{
+    padding: 20px 20px;
+}
+.release-btn{
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    background: rgb(0, 183, 85);
+    border-radius: 6px;
+    float: right;
+    cursor: pointer;
+}
+.release-btn:hover{
+    background: rgb(43, 158, 39);
+}
+/* 帖子类别筛选 */
+.forum-type-div{
+    background: rgb(243, 243, 243);
+    padding: 20px;
+}
+.forum-type-ul{
+    list-style: none;
+}
+.type-li{
+    float: left;
+    margin-right: 14px;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+.type-li:hover{
+    color: rgb(0, 183, 85);
+}
+.li-active{
+    background: rgb(0, 183, 85);
+    color: #ffffff;
+}
+.li-active:hover{
+    color: #ffffff;
+}
+/* 帖子排序 */
+.forum-sort{
+    padding: 20px;
+}
+.sort-ul{
+    list-style: none;
+}
+.sort-ul li{
+    float: left;
+    margin-right: 14px;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+.sort-li{
+    color: rgb(134, 134, 134);
+}
+.sort-active{
+    color: rgb(0, 183, 85);
+}
+.sort-li::after{
+    content: "|";
+    color: rgb(160, 160, 160);
+    position: relative;
+    left: 12px;
+    bottom: 1px;
+}
+/* 帖子列表 */
+.a-forum-box{
+    height: 80px;
+}
+.a-forum-box:hover{
+    background: rgb(240, 240, 240);
+    cursor: pointer;
+}
+.box-left-head{
+    width: 80px;
+    height: 80px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.head-img{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+}
+.box-right{
+    float: left;
+}
+.box-right-top{
+    display: flex;
+    flex-direction: row;
+    padding-top: 18px;
+}
+.box-right-bottom{
+    width: 630px;
+    padding-top: 10px;
+}
+.box-title{
+    margin-right: 14px;
+}
+.box-title:hover{
+    color: rgb(0, 183, 85);
+}
+/* 置顶 */
+.label-ding{
+    border-radius: 4px;
+    background: rgb(59, 202, 147);
+    color: #ffffff;
+    padding: 2px 6px;
+    font-size: 13px;
+    margin-left: 10px;
+}
+.dian{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.box-writer{
+    float: left;
+    color: #f39a24;
+}
+.box-time{
+    color: #949494;
+    float: left;
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.box-where{
+    color: #949494;
+    margin-left: 10px;
+    float: left;
+    font-size: 12px;
+}
+.where{
+    color: black;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 12px;
+}
+.where:hover{
+    color: rgb(0, 183, 85);
+    cursor: pointer;
+}
+.box-new{
+    color: #949494;
+    float: left;
+    margin-left: 20px;
+    font-size: 12px;
+}
+.box-mess-div{
+    float: right;
+    font-size: 12px;
+    color: #949494;
+}
+/* 分页 */
+#page{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* 右半部分热点帖子 */
+.forum-right{
+    float: right;
+    width: 27%;
+    height: 100%;
+}
+/* 热门话题 */
+.hottalk{
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #d6d6d6;
+}
+.hottalk-t{
+    margin-bottom: 20px;
+}
+.a-hottalk{
+    display: inline-block;
+    padding: 2px 6px;
+    border: 1px solid #949494;
+    border-radius: 16px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-right: 18px;
+    color: #5a5a5a;
+}
+.a-hottalk:hover{
+    border: 1px solid rgb(0, 183, 85);
+    color: rgb(0, 183, 85);
+    cursor: pointer;
+}
+/* 近期热贴 */
+.latelytalk{
+    margin-top: 10px;
+}
+.a-latelytalk{
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.latelytalk-title{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.latelytalk-time{
+    float: left;
+    font-size: 12px;
+    color: #949494;
+}
+.latelytalk-reply{
+    float: right;
+    font-size: 12px;
+    color: #949494;
+}
+.a-latelytalk:hover .latelytalk-title{
+    color: rgb(0, 183, 85);
+    cursor: pointer;
+}

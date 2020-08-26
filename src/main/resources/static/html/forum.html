@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 论坛 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/forum.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/vue.min.js"></script>
+    <script src="../layui/layui.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="top-bar">
+            <div class="school-div">
+                <span class="school-name">未选择</span>
+                <span class="fa fa-caret-down" style="margin-left: 6px;"></span>
+            </div>
+            <div class="nav-div">
+                <ul class="layui-nav" lay-filter="">
+                    <li class="layui-nav-item"><a href="index.html">首页</a></li>
+                    <li class="layui-nav-item"><a href="videos.html">视频学习</a></li>
+                    <li class="layui-nav-item"><a href="material.html">考研资料</a></li>
+                    <li class="layui-nav-item"><a href="examination.html">在线考试</a></li>
+                    <li class="layui-nav-item"><a href="exam.html">题库</a></li>
+                    <li class="layui-nav-item"><a href="kaoyannews.html">考研资讯</a></li>
+                    <li class="layui-nav-item layui-this"><a href="forum.html">论坛</a></li>
+                    <li class="layui-nav-item"><a href="wodata.html">蜗数据</a></li>
+                    <li class="layui-nav-item"><a href="personalcenter.html">个人中心</a></li>
+                </ul>
+            </div>
+            <div class="sign-register">
+                登录｜注册
+            </div>
+        </div>
+        <div class="top-bar-none"></div>
+        <div class="center-forum clearfix">
+            <div class="forum-left">
+                <div class="release-btn-div clearfix">
+                    <div class="release-btn">
+                        <span class="fa fa-pencil"></span>
+                        我要发布
+                    </div>
+                </div>
+                <div class="forum-type-div">
+                    <ul class="forum-type-ul clearfix">
+                        <li class="type-li" index="0">全部</li>
+                        <li class="type-li" index="1">经验心得</li>
+                        <li class="type-li" index="2">交流答疑</li>
+                        <li class="type-li" index="3">初试宝典</li>
+                        <li class="type-li" index="4">复试宝典</li>
+                        <li class="type-li" index="5">资源分享</li>
+                        <li class="type-li" index="6">我要提问</li>
+                    </ul>
+                </div>
+                <div class="forum-sort">
+                    <ul class="sort-ul clearfix">
+                        <li class="sort-li" otype="newr">最新回复</li>
+                        <li class="sort-li" otype="new">最新发表</li>
+                        <li class="sort-li" otype="hot">最热</li>
+                    </ul>
+                </div>
+                <!-- 帖子列表 -->
+                <div class="forum-box-div"></div>
+                <div id="page"></div>
+            </div>
+            <div class="forum-right">
+                <!-- 热门话题 -->
+                <div class="hottalk hottalk-a">
+                    <div class="hottalk-t">
+                        <span class="layui-badge-dot"></span>
+                        热门话题
+                    </div>
+                </div>
+                <!-- 近期热点 -->
+                <div class="latelytalk hottalk">
+                    <div class="hottalk-t">
+                        <span class="layui-badge-dot"></span>
+                        近期热贴
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="con-footer">
+            <div>
+                蜗研简介 ┊ 联系我们 ┊ 意见反馈 ┊ 免责声明
+            </div>
+            <div>
+                © 2018 - 2019 woyanwang. All Rights Reserved.如有问题请发邮件到 414709943@qq.com
+            </div>
+        </div>
+    </div>
+    <div id="signInBlock" v-if="signIsShow">
+        <div class="block-white">
+            <!-- 退出登录 -->
+            <div class="sign-xxx">
+                <span class="fa fa-close sign-fa-xxx" @click="btnSignX"></span>
+            </div>
+            <!-- 登录注册切换 -->
+            <div class="top">
+                <div class="top-sign" :class="{ activeBorderColor: SignIsActive }" @click="btnS">登录</div>
+                <div class="top-register" :class="{ activeBorderColor: isActive }" @click="btnR">注册</div>
+            </div>
+            <!-- 登录板块 -->
+            <div class="center" v-if="nowSign">
+                <div class="center-acc">
+                    <span class="fa fa-user sign-fa-style"></span>
+                    <input type="text" placeholder="请输入账号" v-model="signAccount">
+                </div>
+                <div class="center-pass">
+                    <span class="fa fa-lock sign-fa-style"></span>
+                    <input type="password" placeholder="请输入密码" v-model="signPassword">
+                </div>
+                <div class="btn-sign" @click="btnSign">登录</div>
+            </div>
+            <!-- 注册板块 -->
+            <div class="center-register" v-else>
+                <div v-if="register_step">
+                    <div class="center-register-account">
+                        <span class="fa fa-user sign-fa-style"></span>
+                        <input type="text" placeholder="请输入用户名" v-model="registerAccount">
+                    </div>
+                    <div class="center-register-password">
+                        <span class="fa fa-lock sign-fa-style"></span>
+                        <input type="password" placeholder="请输入密码" v-model="registerPassword">
+                    </div>
+                    <div class="center-register-phoneNumber">
+                        <span class="fa fa-phone sign-fa-style"></span>
+                        <input type="text" placeholder="请输入手机号" v-model="registerPhone">
+                    </div>
+                    <div class="center-register-VerificationCode">
+                        <input type="text" placeholder="请输入短信验证码" v-model="registerVerificationCode">
+                        <button class="getCodeDiv" @click="btnGetCode" :disabled="btnIsActive">{{textCode}}</button>
+                    </div>
+                    <div class="btn-next-step" @click="btnNextStep">下一步</div>
+                </div>
+                <div v-else>
+                    <div class="center-register-school" @click="btnSchool1">
+                        <span class="fa fa-book sign-fa-style"></span>
+                        <input type="text" placeholder="选择目前就读院校" v-model="registerSchool1">
+                    </div>
+                    <div class="center-register-year">
+                        <span class="fa fa-hourglass-2 sign-fa-style"></span>
+                        <input type="text" placeholder="输入考研年份" v-model="registerYear">
+                    </div>
+                    <div class="center-register-school" @click="btnSchoolO">
+                        <span class="fa fa-book sign-fa-style"></span>
+                        <input type="text" placeholder="选择目标院校" v-model="registerSchool">
+                    </div>
+                    <div class="center-register-object" @click="btnObject">
+                        <span class="fa fa-mortar-board sign-fa-style"></span>
+                        <input type="text" placeholder="选择报考的专业" v-model="registerObject">
+                    </div>
+                    <div class="center-register-isover">
+                        如果你是跨专业考生请在这里打钩
+                        <input type="checkbox" class="isOverObject" v-model="isChecked">
+                    </div>
+                    <div class="btn-sign" @click="btnRegister">注册</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="con-school">
+        <div class="school-block">
+            <div class="block-top">
+                <div class="top-area">
+                    地区选择 >
+                </div>
+                <div class="top-area-a"></div>
+            </div>
+            <hr>
+            <div class="block-top">
+                <div class="top-area">
+                    可选学校 >
+                </div>
+                <div class="center-right"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/forum.js"></script>
+</body>
+</html>

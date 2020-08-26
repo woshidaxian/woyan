@@ -1,0 +1,86 @@
+.center-examination{
+    width: 1024px;
+    min-height: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    padding-bottom: 70px;
+}
+.exam-top{
+    /* font-size: 20px; */
+    font-weight: bold;
+    margin-top: 30px;
+}
+.exam-select{
+    width: 80px;
+    height: 30px;
+}
+.exam-title{
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    /* background: rgb(247, 247, 247); */
+}
+.exam-name{
+    width: 31%;
+    text-indent: 8px;
+}
+.exam-begin-time,.exam-end-time{
+    width: 22%;
+}
+.exam-status{
+    width: 12%;
+}
+.exam-subject{
+    width: 12%;
+}
+.exam-type{
+    width: 17%;
+    text-align: center;
+}
+.exam-do{
+    text-align: center;
+    width: 14%;
+}
+.a-exam-box{
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+.a-exam-box:hover{
+    background: rgb(243, 243, 243);
+}
+.right8px{
+    margin-right: 8px;
+}
+/* 考试状态 */
+.status-green{
+    color: green;
+    font-weight: bold;
+}
+.status-red{
+    color: red;
+    font-weight: bold;
+}
+.status-blue{
+    color: rgb(0, 195, 255);
+    font-weight: bold;
+}
+.bg-green{
+    background: rgb(243, 255, 249);
+}
+.bg-red{
+    background: rgb(255, 240, 240);
+}
+.bg-blue{
+    background: rgb(231, 249, 255);
+}
+/* 分页 */
+#page{
+    margin-top: 34px;
+}

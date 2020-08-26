@@ -1,0 +1,183 @@
+.center-material{
+    width: 100%;
+    min-height: 100%;
+    background: rgb(255, 255, 255);
+    /* align-items: center; */
+}
+.m-left-bar{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: hidden; */
+    margin-top: 14px;
+}
+.left-bar-type{
+    width: 1350px;
+    min-height: 100px;
+    padding-top: 10px;
+    background: #ffffff;
+    padding-bottom: 8px;
+    margin: 0 auto;
+    
+}
+.choosetype-div{
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 14px -2px #707070;
+}
+.left-bar-m{
+    width: 1174px;
+    min-height: 500px;
+    margin-top: 20px;
+}
+.allorfree{
+    width: 1150px;
+    margin: 0 auto;
+}
+.allorfree-style{
+    padding: 0px 10px;
+    display: inline-block;
+    line-height: 30px;
+    cursor: pointer;
+    color: #707070;
+}
+.allorfree-active{
+    color: rgb(0, 185, 83);
+    font-weight: bold;
+}
+.type-xueyuan,.type-zhuanye{
+    display: flex;
+}
+.xueyuan-left,.zhuanye-left{
+    width: 6%;
+    text-align: right;
+    padding: 20px;
+    padding-top: 10px;
+    font-size: 16px;
+    /* border: 1px solid green; */
+    line-height: 34px;
+    font-weight: bold;
+}
+.xueyuan-right,.zhuanye-right{
+    /* border: 1px solid red; */
+    padding-top: 10px;
+    width: 80%;
+}
+.xueyuan-style{
+    padding: 0px 14px;
+    display: inline-block;
+    line-height: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #707070;
+    border-radius: 10px;
+}
+.zhuanye-style{
+    padding: 0 14px;
+    display: inline-block;
+    line-height: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #575757;
+    border-radius: 10px;
+}
+.xueyuan-active,.zhuanye-active{
+    background: rgb(0, 185, 83);
+    color: #ffffff;
+}
+.m-div{
+    width: 275px;
+    margin-left: 9px;
+    margin-right: 9px;
+    float: left;
+    margin-bottom: 18px;
+    transition: all 0.6s;
+    border-radius: 8px;
+    padding-bottom: 14px;
+}
+.m-div:hover .m-div-title{
+    color: rgb(255, 70, 70);
+}
+.m-div-o{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 1px solid rgb(223, 223, 223);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(0, 185, 83);
+    cursor: pointer;
+}
+.m-div:hover{
+    box-shadow: 0px 0px 10px -2px;
+    cursor: pointer;
+}
+.m-div-top-img{
+    width: 100%;
+    height: 165px;
+    background: url('../img/1.jpg') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.8s;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.m-div-top{
+    width: 100%;
+    height: 165px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.m-div-top:hover .m-div-top-img{
+    transform: scale(1.2);
+}
+.m-div-label{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2px 10px;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    float: left;
+    position: relative;
+    top: -30px;
+    left: 6px;
+    font-size: 12px;
+}
+.m-div-title{
+    padding: 6px 8px;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all .3s;
+}
+.m-div-saw{
+    padding: 6px 8px;
+    color: rgb(192, 192, 192);
+    font-size: 12px;
+}
+.m-div-intro{
+    padding: 3px 8px;
+    color: rgb(145, 145, 145);
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 200;
+}
+.m-div-ppp{
+    padding: 7px 8px;
+}
+.m-span-comment{
+    float: right;
+    font-size: 12px;
+    color: rgb(145, 145, 145);
+}
+.m-span-price{
+    color: rgb(255, 32, 32);
+    font-size: 15px;
+}
+#page{
+    padding-bottom: 70px;
+    padding-top: 30px;
+    /* float: right; */
+}

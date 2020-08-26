@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.2/skins/default/aliplayer-min.css">
+    <link rel="stylesheet" href="../css/videoplay.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://g.alicdn.com/de/prismplayer/2.8.2/aliplayer-min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="con-top">极限与连续</div>
+        <div class="play-box clearfix">
+            <div id="play"></div>
+            <div class="catalog-div">
+                <div style="font-size: 18px;color: #ffffff;font-weight: bold;margin-bottom: 10px;">目录</div>
+                <div class="a-catalog a-catalog-active">
+                    <span class="fa fa-play-circle"></span>
+                    1. 课程导学(4:19)
+                </div>
+                <div class="a-catalog">
+                    <span class="fa fa-play-circle"></span>
+                    1. 课程导学(4:19)
+                </div>
+                <div class="a-catalog">
+                    <span class="fa fa-play-circle"></span>
+                    1. 课程导学(4:19)
+                </div>
+                <div class="a-catalog">
+                    <span class="fa fa-play-circle"></span>
+                    1. 课程导学(4:19)
+                </div>
+                <div class="a-catalog">
+                    <span class="fa fa-play-circle"></span>
+                    1. 课程导学(4:19)
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var player = new Aliplayer({
+            id: 'play',
+            width: '80%',
+            height:'100%',
+            autoplay: true,
+        })
+    </script>
+</body>
+</html>
